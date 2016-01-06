@@ -1,4 +1,5 @@
 removed_sources:
   gnome-maps-3.14.2.tar.xz: 157f61a09f226280d6919f561fc34ab55f32c488
-sources:
   gnome-maps-3.16.1.tar.xz: 33545f22f5b9a1a8ce5262f51e3b04d47a7dcce3
+sources:
+  gnome-maps-3.18.2.tar.xz: d4f4f1c3394fb0bd105a51813ec747d3c241324f

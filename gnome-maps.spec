@@ -1,7 +1,7 @@
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
 
 Name:		gnome-maps
-Version:	3.16.1
+Version:	3.18.2
 Release:	2
 Summary:	A map application for GNOME
 License:	GPLv2+
