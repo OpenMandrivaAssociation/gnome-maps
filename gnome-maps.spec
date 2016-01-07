@@ -1,5 +1,7 @@
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
 
+%define __noautoreqfiles org.gnome.Maps$
+
 Name:		gnome-maps
 Version:	3.18.2
 Release:	2
