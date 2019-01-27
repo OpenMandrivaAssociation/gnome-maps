@@ -55,8 +55,8 @@ find %{buildroot} -name "*.la" -delete
 %{_bindir}/%{name}
 %{_datadir}/glib-2.0/schemas/*
 %{_datadir}/applications/*
-%{_datadir}/appdata/org.gnome.Maps.appdata.xml
+%{_datadir}/metainfo/org.gnome.Maps.appdata.xml
 %{_datadir}/dbus-1/services/org.gnome.Maps.service
-%{_libdir}/gnome-maps
-%{_iconsdir}/*/*/apps/%{name}.*
-%{_iconsdir}/*/*/apps/%{name}-symbolic.*
+%{_iconsdir}/*/*/apps/org.gnome.Maps*.*
+%{_libdir}/%{name}
+%{_datadir}/gir-1.0/GnomeMaps-1.0.gir
