@@ -3,8 +3,8 @@
 %define __noautoreqfiles org.gnome.Maps$
 
 Name:		gnome-maps
-Version:	3.18.2
-Release:	3
+Version:	3.30.3
+Release:	1
 Summary:	A map application for GNOME
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
@@ -23,6 +23,7 @@ BuildRequires:	pkgconfig(gjs-1.0) >= 1.39.0
 BuildRequires:	pkgconfig(geocode-glib-1.0)
 BuildRequires:	pkgconfig(geoclue-2.0)
 BuildRequires:	gjs
+BuildRequires:  meson
 Requires:	gjs
 Requires:	geoclue >= 1.99.3
 
@@ -31,14 +32,13 @@ Requires:	geoclue >= 1.99.3
 
 %prep
 %setup -q
-%apply_patches
 
 %build
-%configure --disable-schemas-compile --disable-introspection
-%make
+%meson
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
 
 # fix .desktop file
 desktop-file-edit %{buildroot}%{_datadir}/applications/org.gnome.Maps.desktop
