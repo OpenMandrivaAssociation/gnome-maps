@@ -59,4 +59,4 @@ find %{buildroot} -name "*.la" -delete
 %{_datadir}/dbus-1/services/org.gnome.Maps.service
 %{_iconsdir}/*/*/apps/org.gnome.Maps*.*
 %{_libdir}/%{name}
-%{_datadir}/gir-1.0/GnomeMaps-1.0.gir
+#{_datadir}/gir-1.0/GnomeMaps-1.0.gir
