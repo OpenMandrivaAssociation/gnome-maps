@@ -22,6 +22,7 @@ BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gjs-1.0) >= 1.39.0
 BuildRequires:	pkgconfig(geocode-glib-1.0)
 BuildRequires:	pkgconfig(geoclue-2.0)
+BuildRequires:  pkgconfig(rest-0.7)
 BuildRequires:	gjs
 BuildRequires:  meson
 Requires:	gjs
