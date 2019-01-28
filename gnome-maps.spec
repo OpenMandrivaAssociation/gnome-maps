@@ -3,8 +3,8 @@
 %define __noautoreqfiles org.gnome.Maps$
 
 Name:		gnome-maps
-Version:	3.18.2
-Release:	3
+Version:	3.30.3
+Release:	1
 Summary:	A map application for GNOME
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
@@ -22,7 +22,9 @@ BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gjs-1.0) >= 1.39.0
 BuildRequires:	pkgconfig(geocode-glib-1.0)
 BuildRequires:	pkgconfig(geoclue-2.0)
+BuildRequires:  pkgconfig(rest-0.7)
 BuildRequires:	gjs
+BuildRequires:  meson
 Requires:	gjs
 Requires:	geoclue >= 1.99.3
 
@@ -31,14 +33,13 @@ Requires:	geoclue >= 1.99.3
 
 %prep
 %setup -q
-%apply_patches
 
 %build
-%configure --disable-schemas-compile --disable-introspection
-%make
+%meson
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
 
 # fix .desktop file
 desktop-file-edit %{buildroot}%{_datadir}/applications/org.gnome.Maps.desktop
@@ -54,8 +55,8 @@ find %{buildroot} -name "*.la" -delete
 %{_bindir}/%{name}
 %{_datadir}/glib-2.0/schemas/*
 %{_datadir}/applications/*
-%{_datadir}/appdata/org.gnome.Maps.appdata.xml
+%{_datadir}/metainfo/org.gnome.Maps.appdata.xml
 %{_datadir}/dbus-1/services/org.gnome.Maps.service
-%{_libdir}/gnome-maps
-%{_iconsdir}/*/*/apps/%{name}.*
-%{_iconsdir}/*/*/apps/%{name}-symbolic.*
+%{_iconsdir}/*/*/apps/org.gnome.Maps*.*
+%{_libdir}/%{name}
+#{_datadir}/gir-1.0/GnomeMaps-1.0.gir
