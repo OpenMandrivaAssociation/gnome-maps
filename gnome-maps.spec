@@ -27,6 +27,11 @@ BuildRequires:	gjs
 BuildRequires:  meson
 Requires:	gjs
 Requires:	geoclue >= 1.99.3
+Requires: typelib(GjsPrivate)
+Requires: typelib(GFBGraph)
+Requires: typelib(GtkChamplain)
+Requires: typelib(GtkClutter)
+Requires: typelib(WebKit2)
 
 %description
 %{name} is a map application for GNOME.
