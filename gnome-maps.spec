@@ -4,7 +4,7 @@
 
 Name:		gnome-maps
 Version:	3.34.3
-Release:	1
+Release:	2
 Summary:	A map application for GNOME
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
@@ -27,7 +27,7 @@ BuildRequires:	gjs
 BuildRequires:  meson
 Requires:	gjs
 Requires:	geoclue >= 1.99.3
-Requires: typelib(GjsPrivate)
+#Requires: typelib(GjsPrivate)
 Requires: typelib(GFBGraph)
 Requires: typelib(GtkChamplain)
 Requires: typelib(GtkClutter)
