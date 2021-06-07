@@ -3,7 +3,7 @@
 %define __noautoreqfiles org.gnome.Maps$
 
 Name:		gnome-maps
-Version:	3.38.3
+Version:	40.2
 Release:	1
 Summary:	A map application for GNOME
 License:	GPLv2+
@@ -11,6 +11,7 @@ Group:		Graphical desktop/GNOME
 Url:		http://www.gnome.org
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 Source100:	gnome-maps.rpmlintrc
+BuildRequires:  appstream-util
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(champlain-0.12)
 BuildRequires:	pkgconfig(folks)
@@ -22,6 +23,7 @@ BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gjs-1.0) >= 1.39.0
 BuildRequires:	pkgconfig(geocode-glib-1.0)
 BuildRequires:	pkgconfig(geoclue-2.0)
+BuildRequires:  pkgconfig(libhandy-1)
 BuildRequires:  pkgconfig(rest-0.7)
 BuildRequires:	gjs
 BuildRequires:  meson
@@ -32,6 +34,7 @@ Requires: typelib(GFBGraph)
 Requires: typelib(GtkChamplain)
 Requires: typelib(GtkClutter)
 Requires: typelib(WebKit2)
+Requires: typelib(Handy)
 
 %description
 %{name} is a map application for GNOME.
