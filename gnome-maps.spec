@@ -3,7 +3,7 @@
 %define __noautoreqfiles org.gnome.Maps$
 
 Name:		gnome-maps
-Version:	40.3
+Version:	40.4
 Release:	1
 Summary:	A map application for GNOME
 License:	GPLv2+
