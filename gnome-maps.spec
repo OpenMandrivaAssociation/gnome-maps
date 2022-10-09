@@ -21,13 +21,14 @@ BuildRequires:	pkgconfig(gio-2.0) >= 2.39.3
 BuildRequires:	pkgconfig(gtk4)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gjs-1.0) >= 1.39.0
-BuildRequires:	pkgconfig(geocode-glib-1.0)
+BuildRequires:	pkgconfig(geocode-glib-2.0)
 BuildRequires:	pkgconfig(geoclue-2.0)
 BuildRequires:  pkgconfig(gweather4)
 BuildRequires:  pkgconfig(libhandy-1)
-BuildRequires:  pkgconfig(libshumate)
-BuildRequires:  pkgconfig(rest-0.7)
+BuildRequires:  pkgconfig(shumate-1.0)
+BuildRequires:  pkgconfig(rest-1.0)
 BuildRequires:  pkgconfig(libsoup-3.0)
+BuildRequires:  pkgconfig(libadwaita-1)
 BuildRequires:	gjs
 BuildRequires:  meson
 Requires:	gjs
