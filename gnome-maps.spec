@@ -3,7 +3,7 @@
 %define __noautoreqfiles org.gnome.Maps$
 
 Name:		gnome-maps
-Version:	42.3
+Version:	43.0
 Release:	1
 Summary:	A map application for GNOME
 License:	GPLv2+
@@ -18,14 +18,16 @@ BuildRequires:	pkgconfig(folks)
 BuildRequires:	pkgconfig(gee-0.8)
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gio-2.0) >= 2.39.3
-BuildRequires:	pkgconfig(gtk+-3.0)
+BuildRequires:	pkgconfig(gtk4)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gjs-1.0) >= 1.39.0
 BuildRequires:	pkgconfig(geocode-glib-1.0)
 BuildRequires:	pkgconfig(geoclue-2.0)
 BuildRequires:  pkgconfig(gweather4)
 BuildRequires:  pkgconfig(libhandy-1)
+BuildRequires:  pkgconfig(libshumate)
 BuildRequires:  pkgconfig(rest-0.7)
+BuildRequires:  pkgconfig(libsoup-3.0)
 BuildRequires:	gjs
 BuildRequires:  meson
 Requires:	gjs
