@@ -4,7 +4,7 @@
 
 Name:		gnome-maps
 Version:	44.3
-Release:	1
+Release:	2
 Summary:	A map application for GNOME
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
@@ -40,6 +40,8 @@ Requires: typelib(GtkChamplain)
 Requires: typelib(GtkClutter)
 Requires: typelib(WebKit2)
 Requires: typelib(Handy)
+Requires: typelib(Rest)
+Requires: %{_lib}rest-gir1.0
 
 %description
 %{name} is a map application for GNOME.
