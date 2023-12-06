@@ -3,12 +3,12 @@
 %define __noautoreqfiles org.gnome.Maps$
 
 Name:		gnome-maps
-Version:	45.1
+Version:	45.2
 Release:	1
 Summary:	A map application for GNOME
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
-Url:		http://www.gnome.org
+Url:		https://www.gnome.org
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 Source100:	gnome-maps.rpmlintrc
 BuildRequires:  appstream-util
