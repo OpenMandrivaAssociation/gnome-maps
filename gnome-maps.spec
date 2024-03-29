@@ -30,6 +30,7 @@ BuildRequires:  pkgconfig(shumate-1.0)
 BuildRequires:  pkgconfig(rest-1.0)
 BuildRequires:  pkgconfig(libsoup-3.0)
 BuildRequires:  pkgconfig(libadwaita-1)
+BuildRequires:  pkgconfig(librsvg-2.0)
 BuildRequires:	gjs
 BuildRequires:  meson
 Requires:	gjs
