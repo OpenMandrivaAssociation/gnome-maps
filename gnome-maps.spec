@@ -13,6 +13,7 @@ Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version
 Source100:	gnome-maps.rpmlintrc
 BuildRequires:  appstream-util
 BuildRequires:	intltool
+BuildRequires:  desktop-file-utils
 BuildRequires:	pkgconfig(champlain-0.12)
 BuildRequires:	pkgconfig(folks)
 BuildRequires:	pkgconfig(gee-0.8)
