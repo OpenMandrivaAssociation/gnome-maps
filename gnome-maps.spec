@@ -11,6 +11,7 @@ Group:		Graphical desktop/GNOME
 Url:		https://www.gnome.org
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 Source100:	gnome-maps.rpmlintrc
+BuildRequires:  appstream
 BuildRequires:  appstream-util
 BuildRequires:	intltool
 BuildRequires:  desktop-file-utils
