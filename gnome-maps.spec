@@ -3,7 +3,7 @@
 %define __noautoreqfiles org.gnome.Maps$
 
 Name:		gnome-maps
-Version:	49.1
+Version:	49.2
 Release:	1
 Summary:	A map application for GNOME
 License:	GPLv2+
@@ -47,12 +47,15 @@ Requires: typelib(Handy)
 Requires: typelib(Rest)
 Requires: %{_lib}rest-gir1.0
 Requires: typelib(XdpGtk4)
+Requires: %{_lib}gweather-gir4.0
+Requires: typelib(GWeather) >= 4.0
+Requires: typelib(Geoclue)
 
 %description
 %{name} is a map application for GNOME.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %meson
