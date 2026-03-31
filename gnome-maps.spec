@@ -15,6 +15,7 @@ BuildRequires:  appstream
 BuildRequires:  appstream-util
 BuildRequires:	intltool
 BuildRequires:  desktop-file-utils
+BuildRequires:  pkgconfig(blueprint-compiler)
 BuildRequires:	pkgconfig(champlain-0.12)
 BuildRequires:	pkgconfig(folks)
 BuildRequires:	pkgconfig(gee-0.8)
