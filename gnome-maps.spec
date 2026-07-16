@@ -4,7 +4,7 @@
 
 Name:		gnome-maps
 Version:	50.2
-Release:	2
+Release:	3
 Summary:	A map application for GNOME
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
