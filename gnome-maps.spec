@@ -3,7 +3,7 @@
 %define __noautoreqfiles org.gnome.Maps$
 
 Name:		gnome-maps
-Version:	50.4
+Version:	51.2
 Release:	1
 Summary:	A map application for GNOME
 License:	GPLv2+
@@ -36,8 +36,8 @@ BuildRequires:  pkgconfig(libadwaita-1)
 BuildRequires:  pkgconfig(librsvg-2.0)
 BuildRequires:	gjs
 BuildRequires:  meson
-Requires:	gjs
-Requires:	geoclue >= 1.99.3
+Requires: gjs
+Requires: geoclue >= 1.99.3
 Requires: typelib(GeocodeGlib)
 #Requires: typelib(GjsPrivate)
 Requires: typelib(GFBGraph)
@@ -74,7 +74,7 @@ find %{buildroot} -name "*.la" -delete
 %find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
-%doc NEWS README
+%doc NEWS README*
 %{_datadir}/%{name}
 %{_bindir}/%{name}
 %{_datadir}/glib-2.0/schemas/*
